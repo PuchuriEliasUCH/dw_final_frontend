@@ -13,8 +13,8 @@ include(__DIR__ . "/public/components/header.php");
         <h2 class="display-5 fw-bold">Conectamos corazones solidarios con organizaciones que necesitan ayuda</h2>
         <p class="lead">Únete a nuestra red de solidaridad y transforma vidas con tu ayuda</p>
         <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
-            <a href="#" class="btn btn-outline-light btn-lg">Quiero Donar</a>
-            <a href="#" class="btn btn-warning btn-lg text-dark fw-semibold">Soy una Organización</a>
+            <a href="/public/pages/login.php" class="btn btn-outline-light btn-lg">Quiero Donar</a>
+            <a href="/public/pages/registroUsuario.php" class="btn btn-warning btn-lg text-dark fw-semibold">Soy una Organización</a>
         </div>
     </div>
 </section>
@@ -72,11 +72,9 @@ include(__DIR__ . "/public/components/header.php");
                     </div>
                 </div>
             </div>
-            <!-- Repetir 3-4 tarjetas similares -->
-            <!-- ... -->
         </div>
         <div class="text-center">
-            <a href="#" class="btn btn-outline-warning">Ver todas las necesidades</a>
+            <a href="/public/pages/necesidades.php" class="btn btn-outline-warning">Ver todas las necesidades</a>
         </div>
     </div>
 </section>

@@ -3,7 +3,6 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 };
 $usuario = $_SESSION['usuario'] ?? null;
-var_dump($usuario)
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -21,7 +20,7 @@ var_dump($usuario)
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top"> <!-- sticky-top agregado -->
             <div class="container">
                 <!-- Logo / Marca -->
-                <a class="navbar-brand fw-bold text-warning" href="/page/inicio">
+                <a class="navbar-brand fw-bold text-warning" href="/index.php">
                     SolidaridApp
                 </a>
 

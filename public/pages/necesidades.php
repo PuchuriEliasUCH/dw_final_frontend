@@ -61,26 +61,8 @@ include(__DIR__ . "/../components/header.php");
 
 <!-- Catálogo de Necesidades -->
 <section class="container py-5">
-    <div class="row g-4" id="catalogoNecesidades">
-        <!-- Card 1 -->
-        <div class="col-lg-4 col-md-6">
-            <div class="card border-0 shadow-sm h-100">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-start mb-3">
-                        <h5 class="card-title fw-bold">Alimentos no perecibles</h5>
-                        <span class="badge bg-danger">Alta urgencia</span>
-                    </div>
-                    <p class="card-text mb-2"><strong>Organización:</strong> Comedor Santa María</p>
-                    <p class="card-text mb-2"><strong>Ubicación:</strong> San Juan de Lurigancho</p>
-                    <p class="card-text text-muted mb-3">Necesitamos arroz, fideos, aceite y enlatados para alimentar a 150 familias diariamente.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="badge bg-secondary">Alimentos</span>
-                        <button class="btn btn-warning btn-sm text-dark fw-semibold">Donar Ahora</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Tarjetas de necesidades -->
+    <div class="row g-4" id="catalogoNecesidades"></div>
 
     <!-- Paginación -->
     <nav aria-label="Navegación del catálogo" class="mt-5">
