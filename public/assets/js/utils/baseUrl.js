@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:80/api/'
+const BASE_URL = 'https://app-dcce17f5-3b01-495b-93e5-c32db1929a8f.cleverapps.io/api/'
 
 // 'https://app-51b42f50-d3e0-46f6-bc90-779f62bc2b53.cleverapps.io/'
 // 'http://localhost:80/'
