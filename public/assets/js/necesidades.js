@@ -11,11 +11,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Ajax
     const necesidades = async () => {
-        const data = await vistas('necesidades/card');
-        console.log(data)
+        let vista = await vistas('necesidades/card');
 
-        necesidadesOriginales.length = 0;
-        necesidadesOriginales.push(...data.resultados); 
+        necesidadesOriginales = await vista.data
         necesidadesFiltradas = [...necesidadesOriginales];
 
         mostrarNecesidades();
