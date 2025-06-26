@@ -1,9 +1,9 @@
 <?php
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
-}
-
+};
 $usuario = $_SESSION['usuario'] ?? null;
+var_dump($usuario)
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -40,13 +40,13 @@ $usuario = $_SESSION['usuario'] ?? null;
                             <a class="nav-link" href="/public/pages/necesidades.php">Necesidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/page/organizaciones">Organizaciones</a>
+                            <a class="nav-link" href="/public/pages/organizaciones.php">Organizaciones</a>
                         </li>
                         <li class="nav-item">
                             <?php if ($usuario): ?>
 
                             <?php endif ?>
-                            <a class="nav-link" href="/registro/inicio">Registrarse</a>
+                            <a class="nav-link" href="/public/pages/registroUsuario.php">Registrarse</a>
                         </li>
                     </ul>
                     <?php if ($usuario): ?>
@@ -64,7 +64,7 @@ $usuario = $_SESSION['usuario'] ?? null;
                             </ul>
                         </div>
                     <?php else: ?>
-                        <a href="/login/inicio" class="btn btn-warning fw-semibold shadow-sm">
+                        <a href="/public/pages/login.php" class="btn btn-warning fw-semibold shadow-sm">
                             Donar Ahora
                         </a>
                     <?php endif; ?>

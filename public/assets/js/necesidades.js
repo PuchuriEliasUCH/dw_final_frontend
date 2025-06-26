@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let necesidadesFiltradas = [];
 
     // Datos originales de las necesidades (extraídos del HTML)
-    const necesidadesOriginales = [];
+    let necesidadesOriginales = [];
 
     necesidades();
 

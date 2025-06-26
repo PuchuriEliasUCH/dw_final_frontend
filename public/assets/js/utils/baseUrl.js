@@ -12,9 +12,18 @@ export const vistas = async (ruta) => {
     }
 }
 
+export const verificarLogeo = async () => {
+    try {
+        const res = await fetch(`${BASE_URL}auth/check`);
+        return await res.json();
+    } catch (error) {
+        
+    }
+}
+
 export const login = async (datos) => {
     try {
-        const res = await fetch(`${BASE_URL}login/login`, {
+        const res = await fetch(`${BASE_URL}auth/login`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
